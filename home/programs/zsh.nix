@@ -84,9 +84,6 @@
     VISUAL = "nvim";
   };
 
-	home.sessionVariables.SSH_AUTH_SOCK =
-  "${config.home.homeDirectory}/.ssh/proton-pass-ssh-agent.sock";
-
   home.sessionPath = [
     "$HOME/.local/bin"
   ];

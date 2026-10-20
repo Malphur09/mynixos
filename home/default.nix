@@ -19,6 +19,7 @@
 		./programs/apps.nix
 		./programs/mime.nix
 		./programs/zed.nix
+		./programs/proton-pass.nix
 
 	];
 
