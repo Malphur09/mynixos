@@ -1,0 +1,16 @@
+[include]
+files = [
+  "~/.config/umbriel/autostart.toml",
+  "~/.config/umbriel/display.toml",
+  "~/.config/umbriel/input.toml",
+  "~/.config/umbriel/layout.toml",
+  "~/.config/umbriel/misc.toml",
+  "~/.config/umbriel/animation.toml",
+  "~/.config/umbriel/keybinds.toml",
+  "~/.config/umbriel/rules.toml",
+]
+
+[include.optional]
+files = [
+  "~/.config/umbriel/noctalia.toml",
+]

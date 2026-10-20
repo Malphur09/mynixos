@@ -1,0 +1,10 @@
+[output.DP-2]
+mode = "1920x1080@239.761"
+scale = 1.0
+position = [0, 0]
+focus_at_startup = true
+
+[output.DP-3]
+mode = "1920x1080@179.961"
+scale = 1.0
+position = [1920, 200]

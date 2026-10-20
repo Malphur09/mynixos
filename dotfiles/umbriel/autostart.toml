@@ -1,0 +1,5 @@
+[general]
+autostart = ["noctalia"]
+mod_key = "Super"
+show_cheatsheet = false
+focus_on_activate = false

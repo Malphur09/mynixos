@@ -1,0 +1,8 @@
+result
+result-*
+.direnv/
+**/.git/
+**/__pycache__/
+**/node_modules/
+**/.cache/
+*.log
