@@ -248,7 +248,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "kitty", "niri"]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "kitty", "umbriel"]
     community_ids = [ "brave-origin", "zed", "yazi" ]
 
 [wallpaper]
