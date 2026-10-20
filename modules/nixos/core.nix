@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs,  ... }:
 
 {
   time.timeZone = "Asia/Riyadh";
@@ -23,4 +23,5 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.zsh;
+	};
 }
