@@ -5,8 +5,10 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   console.keyMap = "us";
+	
+	boot.kernelPackages = pkgs.linuxPackages_zen;
 
-  networking.networkmanager.enable = true;
+	networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = [
     "nix-command"
