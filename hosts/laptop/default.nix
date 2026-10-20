@@ -2,8 +2,11 @@
 
 {
 	imports = [
+		./hardware-configuration.nix
   	../../modules/nixos/desktop.nix
 	];
+
+	system.stateVersion = "26.11";
 
   boot.loader = {
     systemd-boot.enable = true;
