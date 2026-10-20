@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
 	imports = [
@@ -7,7 +7,15 @@
   ../../modules/nixos/gaming.nix
   ];
 
-	system.stateVersion = "26.11";
+	system.stateVersion = "26.05";
+
+	hardware.i2c.enable = true;
+
+	enviornment.systemPackages = with pkgs [
+		ddcutil;
+	];
+
+	users.users.malphur.extraGroups = [ "i2c" ];
 
   boot.loader = {
     systemd-boot.enable = true;

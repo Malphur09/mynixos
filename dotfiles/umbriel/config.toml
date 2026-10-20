@@ -10,7 +10,6 @@ files = [
   "~/.config/umbriel/rules.toml",
 ]
 
+
 [include.optional]
-files = [
-  "~/.config/umbriel/noctalia.toml",
-]
+files = ["noctalia.toml"]

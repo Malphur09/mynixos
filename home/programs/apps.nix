@@ -9,7 +9,6 @@
 		nautilus
     proton-pass
     filen-desktop
-    gearlever
 		localsend
 
     (discord.override {

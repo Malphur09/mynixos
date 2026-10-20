@@ -16,6 +16,5 @@ follows_mouse = true
 
 [input.cursor]
 theme = "Bibata-Modern-Classic"
-size = 26
 hide_when_typing = true
 hide_timeout_ms = 5000

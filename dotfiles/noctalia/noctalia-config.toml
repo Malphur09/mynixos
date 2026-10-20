@@ -2,269 +2,50 @@
 enabled = true
 
 [bar.default]
-background_opacity = 0.63999998569488525
-center = [ "widget", "clock", "weather" ]
-end = [ "tray", "notifications", "network", "volume" ]
+background_opacity = 0.64
+shadow = false
 margin_edge = 2
 margin_ends = 0
 radius = 2
-start = [ "launcher", "wallpaper", "workspaces", "bar" ]
+start = ["launcher", "wallpaper", "workspaces"]
+center = ["clock", "weather"]
+end = ["tray", "notifications", "network", "volume", "battery"]
 
-[battery.device."/org/freedesktop/UPower/devices/battery_hidpp_battery_0"]
-warning_threshold = 11
-
-[brightness]
-enable_ddcutil = true
-sync_all_monitors = true
-
-[calendar]
 
 [control_center.calendar]
 show_events_card = false
 
-[[control_center.shortcuts]]
-type = "caffeine"
-
-[[control_center.shortcuts]]
-type = "nightlight"
-
-[[control_center.shortcuts]]
-type = "notification"
-
-[[control_center.shortcuts]]
-type = "power_profile"
-
-[[control_center.shortcuts]]
-type = "mic_mute"
-
-[[control_center.shortcuts]]
-type = "session"
-
-[dock]
-background_opacity = 0.13999999687075615
-enabled = true
-main_axis_padding = 11
-shadow = false
-show_dots = true
-show_instance_count = false
-
-[hot_corners]
-enabled = true
-
-    [hot_corners.top_right]
-    action = "control_center"
-
-[idle]
-behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
-
-    [idle.behavior.lock]
-    action = "lock"
-    enabled = false
-    timeout = 600.0
-
-    [idle.behavior.lock-and-suspend]
-    action = "lock_and_suspend"
-    enabled = false
-    timeout = 0.0
-
-    [idle.behavior.screen-off]
-    action = "screen_off"
-    enabled = false
-    timeout = 1200.0
-
-[location]
-auto_locate = true
-
 [lockscreen]
-blur_intensity = 0.74999998323619366
+blur_intensity = 0.75
 blurred_desktop = true
 
-[lockscreen_widgets]
-enabled = false
-schema_version = 2
-widget_order = [
-    "lockscreen-login-box@DP-3",
-    "lockscreen-login-box@winit",
-    "lockscreen-login-box@DP-2",
-    "lockscreen-widget-0000000000000001",
-    "lockscreen-widget-0000000000000002"
-]
-
-    [lockscreen_widgets.grid]
-    cell_size = 16
-    major_interval = 4
-    visible = true
-
-    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
-    box_height = 196.0
-    box_width = 720.0
-    cx = 960.0
-    cy = 961.0
-    output = "DP-2"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = 0.0
-    type = "login_box"
-
-        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
-        background_radius = 12.0
-        center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
-        layout = "regular"
-        show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_media = true
-        show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
-
-    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
-    box_height = 196.0
-    box_width = 810.0
-    cx = 960.0
-    cy = 898.0
-    output = "DP-3"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = 0.0
-    type = "login_box"
-
-        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
-        background_radius = 12.0
-        center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
-        layout = "regular"
-        show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_media = true
-        show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
-
-    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
-    box_height = 196.0
-    box_width = 720.0
-    cx = 474.0
-    cy = 833.0
-    output = "winit"
-    placement_height = 952.0
-    placement_width = 948.0
-    rotation = 0.0
-    type = "login_box"
-
-        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
-        background_radius = 12.0
-        center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
-        layout = "regular"
-        show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_media = true
-        show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 160.0
-    box_width = 352.0
-    cx = 960.0
-    cy = 300.0
-    output = "DP-2"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = 0.0
-    type = "clock"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 160.0
-    box_width = 416.0
-    cx = 960.0
-    cy = 540.0
-    output = "DP-2"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = 0.0
-    type = "sysmon"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
-        stat = "cpu_usage"
-        stat2 = "cpu_temp"
-
 [notification]
-background_opacity = 0.63999998569488525
+background_opacity = 0.64
 layer = "overlay"
-
-[osd.kinds]
-media = false
-privacy = false
-volume_input = false
-
-[plugin_settings."davemhammer/tailscale"]
-manager_position = "auto"
-
-[plugin_settings."yuuto/calculator"]
-panel_placement = "floating"
-panel_position = "center"
-
-[plugins]
-enabled = [ "rylos/tailnet", "alexander/screen-toolkit" ]
 
 [shell]
 clipboard_auto_paste = "ctrl_v"
-niri_overview_type_to_launch_enabled = true
 polkit_agent = true
-screen_time_enabled = true
 time_format = "%I:%M %p"
 
-    [shell.launcher]
-    categories = false
-    compact = true
+[shell.launcher]
+categories = false
+compact = true
 
-    [shell.panel]
-    transparency_mode = "soft"
+[shell.panel]
+transparency_mode = "soft"
 
-    [shell.screenshot]
-    confirm_region = true
-    directory = "~/Pictures/Screenshots"
-    skip_annotate_on_copy_save = true
+[shell.screenshot]
+confirm_region = true
+skip_annotate_on_copy_save = true
 
 [theme]
-builtin = "Gruvbox"
-community_palette = "Oxocarbon"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
-    [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "kitty", "umbriel"]
-    community_ids = [ "brave-origin", "zed", "yazi" ]
-
-[wallpaper]
-directory = "/home/malphur/Pictures/walls"
-
-    [wallpaper.default]
-    path = "/home/malphur/Pictures/walls/dreamcore/a_road_with_trees_on_either_side_of_it.jpg"
-
-    [wallpaper.last]
-    path = "/home/malphur/Pictures/walls/dreamcore/a_road_with_trees_on_either_side_of_it.jpg"
-
-    [wallpaper.monitors.DP-2]
-    path = "/home/malphur/Pictures/walls/dreamcore/a_road_with_trees_on_either_side_of_it.jpg"
-
-[widget.bar]
-type = "rylos/tailnet:bar"
+[theme.templates]
+builtin_ids = ["btop", "gtk3", "gtk4", "kitty", "umbriel"]
 
 [widget.clock]
 format = "{:%H:%M %p } "
@@ -272,19 +53,8 @@ format = "{:%H:%M %p } "
 [widget.network]
 show_label = false
 
-[widget.notifications]
-enabled = false
-
-[widget.tray]
-drawer = true
-hidden = [ "shelly", "coolercontrol" ]
-pinned = [ "discord", "steam", "equibop" ]
-
 [widget.volume]
 show_label = false
 
 [widget.weather]
 show_condition = false
-
-[widget.widget]
-type = "alexander/screen-toolkit:widget"

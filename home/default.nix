@@ -5,6 +5,7 @@
 		./desktop/umbriel.nix
 		./desktop/noctalia.nix
 		./desktop/fontconfig.nix
+		./desktop/cursor.nix
 
 		./programs/zsh.nix
 		./programs/git.nix
