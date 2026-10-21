@@ -61,6 +61,8 @@
       zle -N up-line-or-beginning-search
       zle -N down-line-or-beginning-search
 
+			setopt INTERACTIVE_COMMENTS
+
       [[ -n "''${terminfo[kcuu1]}" ]] &&
         bindkey "''${terminfo[kcuu1]}" up-line-or-beginning-search
 
