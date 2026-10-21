@@ -10,9 +10,9 @@
 	system.stateVersion = "26.05";
 
 	hardware.i2c.enable = true;
-
-	enviornment.systemPackages = with pkgs [
-		ddcutil;
+	
+	environment.systemPackages = with pkgs; [
+	  ddcutil
 	];
 
 	users.users.malphur.extraGroups = [ "i2c" ];
@@ -31,8 +31,9 @@
     binfmt = true;
   };
 
-  fileSystems."/mnt/games" = {
+  fileSystems."/games" = {
     device = "/dev/disk/by-uuid/2be86974-a454-4ebb-baf7-a24b6edb173e";
     fsType = "ext4";
+    options = ["noatime"];
   };
 }
