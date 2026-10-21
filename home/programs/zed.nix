@@ -14,13 +14,7 @@
     ];
 
     userSettings = {
-      theme = {
-        mode = "system";
-        dark = "Noctalia Dark";
-        light = "Noctalia Light";
-      };
-
-      buffer_font_family = "JetBrainsMono Nerd Font";
+		  buffer_font_family = "JetBrainsMono Nerd Font";
 
       autosave = "on_focus_change";
       auto_signature_help = true;
