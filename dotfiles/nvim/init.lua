@@ -46,6 +46,15 @@ vim.pack.add({
 -- ==                         PLUGIN CONFIGURATION                         == --
 -- ========================================================================== --
 
+require('tokyonight').setup({
+  style = 'night',
+  transparent = true,
+  styles = {
+    sidebars = 'transparent',
+    floats = 'transparent',
+  },
+})
+
 vim.cmd.colorscheme('tokyonight')
 
 -- See :help MiniIcons.config
@@ -129,22 +138,43 @@ require('which-key').add({
   {'<leader>b', group = 'Buffer'},
 })
 
--- Treesitter setup
--- Try to update all parsers after a plugin update
+-- Tree-sitter
+local parsers = {
+  'bash',
+  'c',
+  'cpp',
+  'css',
+  'go',
+  'html',
+  'javascript',
+  'json',
+  'lua',
+  'nix',
+  'python',
+  'rust',
+  'toml',
+  'tsx',
+  'typescript',
+  'vim',
+  'vimdoc',
+  'yaml',
+}
+
+local treesitter = require('nvim-treesitter')
+treesitter.install(parsers)
+
 vim.api.nvim_create_autocmd('PackChanged', {
   pattern = 'nvim-treesitter',
-  desc = 'Update treesitter parsers',
-  command = 'TSUpdate'
+  callback = function()
+    vim.cmd('TSUpdate')
+  end,
 })
 
--- NOTE: treesitter features **must** be enabled manually
--- https://github.com/nvim-treesitter/nvim-treesitter#supported-features
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = {'lua', 'vim', 'help'},
-  callback = function()
-    -- Enable treesitter based syntax highlight
-    pcall(vim.treesitter.start)
-  end
+  pattern = parsers,
+  callback = function(event)
+    pcall(vim.treesitter.start, event.buf)
+  end,
 })
 
 -- LSP setup
@@ -164,4 +194,21 @@ vim.api.nvim_create_autocmd('LspAttach', {
       vim.bo[event.buf].omnifunc = 'v:lua.MiniCompletion.completefunc_lsp'
     end
   end,
+})
+
+-- LSP servers
+vim.lsp.enable({
+  'nixd',          -- Nix
+  'lua_ls',        -- Lua
+  'basedpyright',  -- Python
+  'rust_analyzer', -- Rust
+  'gopls',         -- Go
+  'ts_ls',         -- JavaScript / TypeScript
+  'jsonls',        -- JSON
+  'yamlls',        -- YAML
+  'taplo',         -- TOML
+  'bashls',        -- Bash
+  'html',          -- HTML
+  'cssls',         -- CSS
+  'clangd',        -- C / C++
 })
