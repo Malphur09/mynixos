@@ -7,6 +7,7 @@
     wl-clipboard
 
     nixd
+		nixfmt
     lua-language-server
     basedpyright
     rust-analyzer

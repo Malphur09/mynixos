@@ -10,6 +10,7 @@
     proton-pass
     filen-desktop
 		localsend
+		obsidian
 
     (discord.override {
       withEquicord = true;
