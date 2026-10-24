@@ -6,7 +6,6 @@
 		firefox
 		vlc
 		mpv
-		nautilus
     proton-pass
     filen-desktop
 		localsend

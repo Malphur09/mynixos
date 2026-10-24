@@ -14,8 +14,6 @@
       "video/webm" = "mpv.desktop";
       "video/quicktime" = "mpv.desktop";
       "video/x-msvideo" = "mpv.desktop";
-
-      "inode/directory" = "org.gnome.Nautilus.desktop";
     };
   };
 }

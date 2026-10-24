@@ -58,6 +58,3 @@ show_label = false
 
 [widget.weather]
 show_condition = false
-
-[hooks]
-colors_changed = "bash /home/malphur/mynixos/dotfiles/noctalia/refresh-gtk.sh dark"
