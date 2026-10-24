@@ -56,6 +56,7 @@
     };
 
     initContent = ''
+			export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/proton-pass-agent"
       # Prefix-based history navigation
       autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
       zle -N up-line-or-beginning-search
