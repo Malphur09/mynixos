@@ -7,13 +7,26 @@
   };
 
 	gtk = {
-  enable = true;
+ 	 enable = true;
 
-  theme = {
-    name = "adw-gtk3";
-    package = pkgs.adw-gtk3;
+	  theme = {
+  	  name = "adw-gtk3-dark";
+  	  package = pkgs.adw-gtk3;
+	  };
+
+		gtk4.theme = null;
+
+  	colorScheme = "dark";
+
+  	iconTheme = {
+   	 name = "Adwaita";
+   	 package = pkgs.adwaita-icon-theme;
   	};
-	};
+
+  	gtk3.extraCss = ''@import url("noctalia.css");'';
+  	gtk4.extraCss = ''@import url("noctalia.css");'';
+};
+
 
   xdg.configFile."noctalia/noctalia-config.toml".source =
     config.lib.file.mkOutOfStoreSymlink
