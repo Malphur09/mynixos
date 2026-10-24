@@ -48,7 +48,18 @@
 
 	fonts.packages = with pkgs; [
  	 	nerd-fonts.jetbrains-mono
+		nerd-fonts.iosevka
+		nerd-fonts.symbols-only
+		
+		inter
+		roboto
   	noto-fonts
   	noto-fonts-color-emoji
+
+		iosevka
+		jetbrains-mono
+		fira-code
+		cascadia-code
+		
 	];
 }
