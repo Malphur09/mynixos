@@ -31,7 +31,7 @@ match.title = "^Picture-in-Picture$"
 default_floating = true
 
 [[window_rule]]
-match.app_id = ["^firefox$", "^brave-origin$", "^zed$", "^obsidian$", "^steam$"]
+match.app_id = ["^firefox$", "^brave-origin$", "^zed$", "^obsidian$"]
 default_maximize = true
 
 [[window_rule]]
@@ -65,3 +65,18 @@ match.app_id = "^mpv$"
 default_output = "DP-3"
 default_fullscreen = true
 
+# Settings and dialog windows
+[[window_rule]]
+match.title = ".*([Ss]ettings|[Pp]references|[Pp]roperties|[Oo]ptions|[Cc]onfiguration).*"
+default_floating = true
+default_position = { x = 0, y = 0, anchor = "center" }
+
+# Main Steam window
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^Steam$"
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "^md[.]obsidian[.]Obsidian$"
+opacity = 0.9
