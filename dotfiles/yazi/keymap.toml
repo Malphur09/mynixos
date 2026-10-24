@@ -7,3 +7,8 @@ desc = "Archive selected files"
 on = ["R"]
 run = "app:theme"
 desc = "Reload theme"
+
+[[mgr.prepend_keymap]]
+on = ["<Enter>"]
+run = "plugin smart-enter"
+desc = "Enter directory or open file"
