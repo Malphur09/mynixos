@@ -10,9 +10,5 @@
     filen-desktop
 		localsend
 		obsidian
-
-    (discord.override {
-      withEquicord = true;
-    })
   ];
 }

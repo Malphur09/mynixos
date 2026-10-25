@@ -10,6 +10,12 @@
     };
 
 		umbriel.url = "github:noctalia-dev/umbriel/cachix";
+
+		nixcord = {
+			url = "github:4evy/nixcord";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }:
