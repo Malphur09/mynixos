@@ -11,9 +11,16 @@
     discord = {
       enable = true;
       equicord.enable = true;
+      krisp.enable = true;
+
+      branches = [ "stable" ];
+
     };
 
     config = {
+      frameless = true;
+      useQuickCss = false;
+
       plugins = {
         betterFolders.enable = true;
         betterSettings.enable = true;
@@ -23,7 +30,7 @@
         webContextMenus.enable = true;
 
         clearUrls.enable = true;
-        noTrack.enable = true;
+        noTrack.enable = false;
         silentTyping.enable = true;
         disableCallIdle.enable = true;
 
