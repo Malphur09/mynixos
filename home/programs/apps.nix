@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
 		brave-origin
-		firefox
 		vlc
 		mpv
     proton-pass
