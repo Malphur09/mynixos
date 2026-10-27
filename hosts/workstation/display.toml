@@ -3,6 +3,8 @@ mode = "1920x1080@239.761"
 scale = 1.0
 position = [0, 0]
 focus_at_startup = true
+direct_scanout = true
+tearing = false
 
 [output.DP-3]
 mode = "1920x1080@179.961"

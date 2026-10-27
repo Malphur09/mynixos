@@ -1,15 +1,17 @@
 [include]
 files = [
-  "~/.config/umbriel/autostart.toml",
-  "~/.config/umbriel/display.toml",
-  "~/.config/umbriel/input.toml",
-  "~/.config/umbriel/layout.toml",
-  "~/.config/umbriel/misc.toml",
-  "~/.config/umbriel/animation.toml",
-  "~/.config/umbriel/keybinds.toml",
-  "~/.config/umbriel/rules.toml",
+  "config/animation.toml",
+  "config/appearance.toml",
+  "config/autostart.toml",
+  "config/display.toml",
+  "config/input.toml",
+  "config/keybinds.toml",
+  "config/layer-rules.toml",
+  "config/layout.toml",
+  "config/overview.toml",
+  "config/rules.toml",
 ]
-
 
 [include.optional]
 files = ["noctalia.toml"]
+

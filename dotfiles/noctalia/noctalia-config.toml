@@ -11,7 +11,6 @@ start = ["launcher", "wallpaper", "workspaces"]
 center = ["clock", "weather"]
 end = ["tray", "notifications", "network", "volume", "battery"]
 
-
 [control_center.calendar]
 show_events_card = false
 
@@ -58,3 +57,11 @@ show_label = false
 
 [widget.weather]
 show_condition = false
+
+[wallpaper]
+enabled = true
+directory = "/home/malphur/Pictures/walls"
+
+[wallpaper.automation]
+enabled = false
+recursive = true

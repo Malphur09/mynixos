@@ -1,5 +1,9 @@
 [general]
-autostart = ["noctalia"]
+autostart = [
+	"noctalia",
+	"discord --start-minimized",
+	"filen-desktop"
+]
 mod_key = "Super"
 show_cheatsheet = false
 focus_on_activate = false

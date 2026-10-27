@@ -1,0 +1,119 @@
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+# -------- App Specific --------
+
+[[window_rule]]
+match.app_id = ["^brave-origin$", "^zed$", "^md[.]obsidian[.]Obsidian$"]
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "^proton-pass$"
+default_floating = true
+default_floating_size = { width = 0.55, height = 0.65 }
+
+
+# -------- PIP --------
+
+[[window_rule]]
+match.app_id = "^brave-origin$"
+match.title = "^[Pp]icture[ -][Ii]n[ -][Pp]icture$"
+
+default_floating = true
+default_maximize = false
+default_floating_size = { width = 0.25, height = 0.25 }
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+default_focused = false
+focus_on_activate = false
+default_pinned = true
+opacity = 1.0
+
+# -------- Gaming Rules -------- 
+
+[[window_rule]]
+match.app_id = "^steam$"
+default_floating = true
+default_maximize = false
+default_floating_size = { width = 0.5, height = 0.6 }
+default_position = { x = 0, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^Steam$"
+default_floating = false
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^Friends List$"
+default_floating = true
+default_maximize = false
+default_floating_size = { width = 0.3, height = 0.6 }
+default_position = { x = 0, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^notificationtoasts_[0-9]+_desktop$"
+default_floating = true
+default_focused = false
+focus_on_activate = false
+default_position = { x = 10, y = 10, anchor = "bottom_right" }
+
+[[window_rule]]
+match.app_id = [
+	"^steam_app_[0-9]+$",
+	"^[Ww][Ii][Nn][Ee]",
+	"^[Gg][Oo][Vv][Ee][Rr][Ll][Aa][Yy]",
+	"^retroarch$",
+	"^heroic$",
+]
+default_floating = false
+default_output = "DP-2"
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "^steam_app_[0-9]+$"
+confine_pointer = true
+
+[[window_rule]]
+match.content_type = "game"
+vrr = "always"
+
+# -------- Misc Rules --------
+
+[[window_rule]]
+match.app_id = "^yazi[.]filemanager$"
+default_floating = true
+default_floating_size = { width = 0.65, height = 0.7 }
+default_position = { x = 0, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "^btop[.]monitor$"
+default_floating = true
+default_floating_size = { width = 0.65, height = 0.7 }
+default_position = { x = 0, y = 0, anchor = "center" }
+opacity = 0.95
+
+[[window_rule]]
+match.app_id = "^org[.]localsend[.]localsend_app$"
+default_floating = true
+default_floating_size = { width = 0.45, height = 0.6 }
+default_position = { x = 0, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "^dev[.]noctalia[.]Noctalia$"
+match.title = "^Noctalia Settings$"
+default_floating = true
+default_maximize = false
+default_floating_size = { width = 0.55, height = 0.7 }
+default_position = { x = 0, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "^kitty$"
+opacity = 0.99
+
+[[window_rule]]
+match.app_id = "^kitty$"
+match.is_focused = false
+opacity = 0.85

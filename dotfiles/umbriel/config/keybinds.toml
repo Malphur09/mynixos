@@ -1,0 +1,247 @@
+[keybinds]
+
+# -------- Applications --------
+
+"Mod+T" = { action = "spawn:kitty", repeat = false }
+"Mod+W" = { action = "spawn:brave-origin", repeat = false }
+"Mod+E" = { action = "spawn:kitty --class yazi.filemanager -e yazi", repeat = false }
+"Mod+G" = { action = "spawn:kitty --class btop.monitor -e btop", repeat = false }
+
+# -------- Scratchpad --------
+"Mod+Shift+T" = { action = "scratchpad-toggle:terminal", repeat = false }
+"Mod+Shift+Backspace" = "window-move-to-scratchpad:general"
+"Mod+Shift+Space" = "scratchpad-toggle:general"
+"Mod+Shift+Tab" = "scratchpad-focus-next:general"
+"Mod+Ctrl+Backspace" = "window-restore-from-scratchpad:general"
+
+
+# -------- Noctalia Controls --------
+
+"Mod+Space" = { action = "spawn:noctalia msg panel-toggle launcher", repeat = false }
+"Mod+S" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
+"Mod+Period" = { action = "spawn:noctalia msg settings-toggle", repeat = false }
+"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
+"Mod+Comma" = { action = "spawn:noctalia msg panel-toggle launcher /emo", repeat = false }
+
+
+# -------- Session Controls --------
+
+"Mod+Shift+L" = { action = "spawn:noctalia msg session lock", repeat = false }
+"Mod+Shift+Q" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
+"Mod+Shift+Escape" = { action = "cheatsheet-toggle", repeat = false }
+
+
+# -------- Multimedia --------
+
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
+"XF86AudioMicMute" = { action = "spawn:noctalia msg mic-mute", allow_when_locked = true }
+
+"XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
+"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true }
+
+
+# -------- Brightness --------
+
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
+
+
+# -------- Wallpapers --------
+
+"Mod+Shift+W" = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
+"Mod+Shift+R" = { action = "spawn:noctalia msg wallpaper-random", repeat = false }
+
+
+# -------- Screenshots --------
+
+"Print" = { action = "spawn:noctalia msg screenshot-region", repeat = false }
+"Ctrl+Print" = { action = "spawn:noctalia msg screenshot-fullscreen", repeat = false }
+"Alt+Print" = { action = "spawn:noctalia msg screenshot-fullscreen all", repeat = false }
+
+
+# -------- Screen Recording --------
+
+"Mod+Ctrl+R" = { action = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle", repeat = false }
+
+
+# -------- Window Focus --------
+
+# Focus direction
+"Mod+Left" = "window-focus-left"
+"Mod+H" = "window-focus-left"
+
+"Mod+Right" = "window-focus-right"
+"Mod+L" = "window-focus-right"
+
+"Mod+Up" = "window-focus-up"
+"Mod+K" = "window-focus-up"
+
+"Mod+Down" = "window-focus-down"
+"Mod+J" = "window-focus-down"
+
+# Focus first / last column
+"Mod+Home" = "column-focus-first"
+"Mod+End" = "column-focus-last"
+
+# Cycle windows
+"Mod+BracketRight" = "window-focus-next"
+"Mod+BracketLeft" = "window-focus-previous"
+
+
+# -------- Window Movement --------
+
+# Move columns horizontally
+"Mod+Ctrl+Left" = "column-move-left"
+"Mod+Ctrl+H" = "column-move-left"
+
+"Mod+Ctrl+Right" = "column-move-right"
+"Mod+Ctrl+L" = "column-move-right"
+
+# Move windows vertically
+"Mod+Ctrl+Up" = "window-move-up"
+"Mod+Ctrl+K" = "window-move-up"
+
+"Mod+Ctrl+Down" = "window-move-down"
+"Mod+Ctrl+J" = "window-move-down"
+
+# Move columns to first / last position
+"Mod+Ctrl+Home" = "column-move-to-first"
+"Mod+Ctrl+End" = "column-move-to-last"
+
+# Swap windows
+"Mod+Shift+BracketLeft" = "window-swap-previous"
+"Mod+Shift+BracketRight" = "window-swap-next"
+
+
+# -------- Monitor Switching --------
+
+# Switch focus between monitors
+"Mod+Tab" = "output-focus-next"
+
+# Move focused column between monitors
+"Mod+Shift+Left" = "column-move-to-output-left"
+"Mod+Shift+Right" = "column-move-to-output-right"
+"Mod+Shift+Up" = "column-move-to-output-up"
+"Mod+Shift+Down" = "column-move-to-output-down"
+
+
+# -------- Workspace Navigation --------
+
+# Switch workspaces
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+
+# Return to previous workspace
+"Alt+Tab" = "workspace-focus-last"
+
+# Move focused column to workspace
+"Mod+Ctrl+1" = "column-move-to-workspace:1"
+"Mod+Ctrl+2" = "column-move-to-workspace:2"
+"Mod+Ctrl+3" = "column-move-to-workspace:3"
+"Mod+Ctrl+4" = "column-move-to-workspace:4"
+"Mod+Ctrl+5" = "column-move-to-workspace:5"
+"Mod+Ctrl+6" = "column-move-to-workspace:6"
+"Mod+Ctrl+7" = "column-move-to-workspace:7"
+"Mod+Ctrl+8" = "column-move-to-workspace:8"
+"Mod+Ctrl+9" = "column-move-to-workspace:9"
+
+# Navigate adjacent workspaces
+"Mod+Page_Down" = "workspace-next"
+"Mod+Page_Up" = "workspace-previous"
+
+# Move focused column to adjacent workspace
+"Mod+Ctrl+Page_Down" = "column-move-to-workspace-next"
+"Mod+Ctrl+Page_Up" = "column-move-to-workspace-previous"
+
+
+# -------- Scroll Navigation --------
+
+# Switch workspaces
+"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
+
+# Move focused column between workspaces
+"Mod+Ctrl+WheelDown" = { action = "column-move-to-workspace-next", cooldown_ms = 150 }
+"Mod+Ctrl+WheelUp" = { action = "column-move-to-workspace-previous", cooldown_ms = 150 }
+
+# Focus windows horizontally
+"Mod+WheelRight" = { action = "window-focus-right", cooldown_ms = 150 }
+"Mod+WheelLeft" = { action = "window-focus-left", cooldown_ms = 150 }
+
+# Move columns horizontally
+"Mod+Ctrl+WheelRight" = { action = "column-move-right", cooldown_ms = 150 }
+"Mod+Ctrl+WheelLeft" = { action = "column-move-left", cooldown_ms = 150 }
+
+# Focus windows with vertical scrolling
+"Mod+Shift+WheelDown" = { action = "window-focus-right", cooldown_ms = 150 }
+"Mod+Shift+WheelUp" = { action = "window-focus-left", cooldown_ms = 150 }
+
+# Move columns with vertical scrolling
+"Mod+Ctrl+Shift+WheelDown" = { action = "column-move-right", cooldown_ms = 150 }
+"Mod+Ctrl+Shift+WheelUp" = { action = "column-move-left", cooldown_ms = 150 }
+
+
+# -------- Window Layout --------
+
+# Cycle window width presets
+"Mod+Shift+E" = "window-cycle-primary-extent"
+
+# Adjust window width
+"Mod+Minus" = "window-modify-primary-extent:-0.1"
+"Mod+Equal" = "window-modify-primary-extent:0.1"
+
+# Adjust secondary extent
+"Mod+Shift+Minus" = "window-modify-secondary-extent:-0.1"
+"Mod+Shift+Equal" = "window-modify-secondary-extent:0.1"
+
+# Expand to full width
+"Mod+Ctrl+F" = "window-set-primary-extent:1.0"
+
+# Center column
+"Mod+C" = "column-center"
+
+
+# -------- Window Management --------
+
+"Mod+A" = { action = "window-toggle-floating", repeat = false }
+"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Shift+M" = { action = "window-toggle-maximize", repeat = false }
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+
+
+# -------- Tiling Layouts --------
+
+"Mod+Alt+S" = "workspace-set-layout:scrolling"
+"Mod+Alt+D" = "workspace-set-layout:dwindle"
+"Mod+Alt+M" = "workspace-set-layout:master"
+
+
+# -------- System & Session --------
+
+"Mod+Q" = { action = "window-close", repeat = false }
+
+"Mod+O" = { action = "overview-toggle", repeat = false }
+
+"Mod+Shift+P" = { action = "dpms-off", repeat = false }
+
+"Mod+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+
+# -------- Scratchpad Definitions --------
+
+[[scratchpad]]
+name = "terminal"
+spawn_when_empty = "kitty --class scratchpad.terminal"
+
+[[scratchpad]]
+name = "general"
