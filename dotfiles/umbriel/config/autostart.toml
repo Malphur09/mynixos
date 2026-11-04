@@ -2,7 +2,7 @@
 autostart = [
 	"noctalia",
 	"discord --start-minimized",
-	"filen-desktop"
+	"filen"
 ]
 mod_key = "Super"
 show_cheatsheet = false
