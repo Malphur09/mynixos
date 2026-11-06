@@ -41,4 +41,7 @@
     fsType = "ext4";
     options = ["noatime"];
   };
+
+	services.lact.enable = true;
+	hardware.amdgpu.overdrive.enable = true;
 }
