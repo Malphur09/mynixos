@@ -65,7 +65,7 @@ users.users.malphur.extraGroups = [ "uinput" ];
       fps_value = [ 30 60 ];
 
       fps_limit_method = "late";
-      fps_limit = [ 120 240 ];
+      fps_limit = [120 240 60 110 ];
 
       fsr = true;
       gamemode = true;
