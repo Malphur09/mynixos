@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
 	imports = [
@@ -28,6 +28,10 @@
 
 	services.upower.enable = true;
 	services.power-profiles-daemon.enable = true;
+
+	environment.systemPackages = with pkgs; [
+  	wl-mirror
+	];
 
 	hardware.alsa.enablePersistence = true;
 }

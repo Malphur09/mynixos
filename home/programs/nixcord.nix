@@ -13,7 +13,8 @@
       krisp.enable = true;
 
       branches = [ "stable" ];
-
+			
+			openASAR.enable = false;
     };
   };
 }
